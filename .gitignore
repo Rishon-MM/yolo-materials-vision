@@ -1,0 +1,37 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+.env
+
+# IDE / Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Deep Learning / YOLO
+runs/
+*.pt
+*.onnx
+*.weights
+*.engine
+prediction.jpg
+test.jpg
+
+# Datasets
+train/
+test/
+valid/
+dataset/
+*.zip
+
+# OS Files
+.DS_Store
+Thumbs.db
