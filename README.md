@@ -6,13 +6,13 @@
 
 This repository contains a specialized YOLO object detection pipeline optimized for **Scanning Electron Microscope (SEM) imagery**. It is designed to analyze powder quality (e.g., for additive manufacturing, metallurgy, or battery materials) by detecting and classifying individual particles based on their morphology and surface defects.
 
-### 🎯 Classification Categories
+###  Classification Categories
 The model is trained to detect three specific classes of particles:
 - 🟢 **Good**: Well-formed, intact, and highly spherical particles.
 - 🟡 **Irregular**: Misshapen, agglomerated, or satellite-bearing particles.
 - 🔴 **Porous**: Particles exhibiting surface cracks, pores, or severe structural defects.
 
-### 📸 Visual Gallery
+###  Visual Gallery
 
 | Training Data Sample | Inference on Raw Data | Model Prediction Results |
 | :---: | :---: | :---: |
@@ -21,7 +21,7 @@ The model is trained to detect three specific classes of particles:
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Domain-Specific Hyperparameters**: The training pipeline (`Training.py`) is heavily tuned for SEM images. For example, `mixup` augmentation is explicitly disabled as it is known to degrade precision on dense, grayscale microstructural datasets.
 - **High-Resolution Processing**: Configured to process `640x640` images to capture fine morphological details like micro-pores.
@@ -31,7 +31,7 @@ The model is trained to detect three specific classes of particles:
 
 ---
 
-## 🛠️ Project Structure
+##  Project Structure
 
 ```bash
 📦 Project Root
@@ -70,7 +70,7 @@ The model is trained to detect three specific classes of particles:
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ### 1. Verify GPU Setup
 Before running the main training loop, verify your PyTorch CUDA setup to ensure your GPU is fully utilized:
@@ -97,7 +97,7 @@ python Training.py
 
 ---
 
-## 🧠 Training Insights for SEM Data
+##  Training Insights for SEM Data
 
 The `Training.py` script contains carefully selected hyperparameter choices for microstructural analysis:
 - **Augmentation**: Employs moderate rotation (`degrees=0.1`), translation (`translate=0.1`), and scaling (`scale=0.5`).
@@ -106,5 +106,5 @@ The `Training.py` script contains carefully selected hyperparameter choices for 
 
 ---
 
-## 📄 License
+##  License
 This project is open-sourced under the [MIT License](LICENSE).
