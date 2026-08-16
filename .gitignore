@@ -22,8 +22,9 @@ runs/
 *.onnx
 *.weights
 *.engine
-prediction.jpg
-test.jpg
+# prediction.jpg  # Kept in repo for README example
+# test.jpg        # Kept in repo for README example
+# train_batch2.jpg # Kept in repo for README example
 
 # Datasets
 train/

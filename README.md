@@ -12,6 +12,13 @@ The model is trained to detect three specific classes of particles:
 - 🟡 **Irregular**: Misshapen, agglomerated, or satellite-bearing particles.
 - 🔴 **Porous**: Particles exhibiting surface cracks, pores, or severe structural defects.
 
+### 📸 Visual Gallery
+
+| Training Data Sample | Inference on Raw Data | Model Prediction Results |
+| :---: | :---: | :---: |
+| <img src="train_batch2.jpg" alt="Training Batch" width="300"/> | <img src="test.jpg" alt="Raw Test Image" width="300"/> | <img src="prediction.jpg" alt="Prediction Example" width="300"/> |
+| *Augmented training batch with ground-truth bounding boxes.* | *Unseen raw SEM test image.* | *Final YOLOv12 model detections.* |
+
 ---
 
 ## ✨ Features
